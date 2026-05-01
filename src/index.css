@@ -373,19 +373,51 @@ input, select, textarea { font-family: var(--sans); font-size: 1rem; cursor: non
 @media (max-width: 768px) {
   body, a, button, input, select, textarea { cursor: auto; }
   .cursor, .cursor-ring { display: none !important; }
+  
+  /* Global spacing */
+  .hero { padding: 5rem 1.5rem 3rem; min-height: 90vh; }
+  .about, .areas, .team, .diff, .testimonials, .cta-section { padding: 4rem 1.5rem; }
+  .section-title { font-size: 2.25rem; margin-bottom: 1.5rem; }
+  
+  /* Typography tweaks for smaller screens */
+  .hero__title-line { font-size: clamp(2.2rem, 10vw, 4rem); }
+  .hero__subtitle { font-size: 0.9rem; letter-spacing: 0.15em; }
+  
+  /* Navbar */
+  .nav__inner { padding: 0 1.5rem; }
   .nav__links {
     position: fixed; top: 0; right: -100%; width: 280px; height: 100vh;
-    background: var(--bg-elevated); flex-direction: column; padding: 5rem 2rem;
+    background: var(--bg-elevated); flex-direction: column; padding: 6rem 2rem 2rem;
     gap: 1.5rem; transition: right 0.4s var(--ease-out); border-left: 1px solid var(--border);
+    box-shadow: -10px 0 30px rgba(0,0,0,0.5);
   }
   .nav__links.open { right: 0; }
-  .nav__toggle { display: flex; z-index: 101; }
-  .about__inner, .cta-section__inner { grid-template-columns: 1fr; gap: 3rem; }
-  .areas__grid, .team__grid { grid-template-columns: 1fr; }
-  .diff__grid { grid-template-columns: 1fr; }
-  .contact-form__row { grid-template-columns: 1fr; }
+  .nav__toggle { display: flex; z-index: 101; background: transparent; padding: 0.5rem; margin-right: -0.5rem; }
+  
+  /* Grids to 1 column */
+  .about__inner, .cta-section__inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .areas__grid, .team__grid, .diff__grid { grid-template-columns: 1fr; gap: 1rem; margin-top: 2rem; }
+  .contact-form__row { grid-template-columns: 1fr; gap: 0; }
+  .contact-form__group { margin-bottom: 1rem; }
+  .contact-form { padding: 1.5rem; }
+  
+  /* Stats grid */
+  .stats__inner { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem 1rem; 
+    padding: 3rem 1.5rem; 
+  }
   .stats__divider { display: none; }
-  .stats__inner { gap: 2rem; }
+  .stats__number { font-size: 2.5rem; }
+  
+  /* Floating elements */
+  .floating-whatsapp {
+    width: 50px; height: 50px; bottom: 1.5rem; right: 1.5rem;
+  }
+  
+  /* Footer */
+  .footer { padding: 3rem 1.5rem 1.5rem; }
   .footer__top { grid-template-columns: 1fr; gap: 2rem; }
-  .footer__bottom { flex-direction: column; text-align: center; }
+  .footer__bottom { flex-direction: column; text-align: center; gap: 1rem; }
 }
