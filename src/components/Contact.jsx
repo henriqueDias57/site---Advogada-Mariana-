@@ -33,6 +33,9 @@ ${message}`;
     const whatsappNumber = "5512997429299";
     const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`;
     
+    // Abrir imediatamente para o navegador não bloquear o popup
+    window.open(url, '_blank');
+    
     toast.success('Redirecionando para o WhatsApp...', {
       style: {
         background: '#1a1a1a',
@@ -45,11 +48,8 @@ ${message}`;
       },
     });
 
-    setTimeout(() => {
-      window.open(url, '_blank');
-      setSubmitted(true);
-      setTimeout(() => { setSubmitted(false); e.target.reset(); }, 3000);
-    }, 1000);
+    setSubmitted(true);
+    setTimeout(() => { setSubmitted(false); e.target.reset(); }, 3000);
   };
 
   return (
