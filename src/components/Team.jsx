@@ -5,11 +5,6 @@ const team = [
   { name: 'Mariana Dias Ferreira', role: 'Advogada Fundadora', photo: '/team/mariana.png', bio: 'Pós-graduada em Direito do Trabalho e Direito Previdenciário. Dedicada a oferecer assistência e consultoria jurídica presencial com foco na resolução das demandas de seus clientes em Cruzeiro e região.', oab: 'OAB/SP 534.173' },
 ];
 
-const cardVar = {
-  hidden: { opacity: 0, y: 40 },
-  visible: (i) => ({ opacity: 1, y: 0, transition: { duration: 0.7, delay: i * 0.15, ease: [0.16, 1, 0.3, 1] } }),
-};
-
 export default function Team() {
   const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
