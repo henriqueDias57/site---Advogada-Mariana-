@@ -44,7 +44,12 @@ export default function Footer() {
         </div>
         <div className="footer__bottom">
           <p>&copy; {new Date().getFullYear()} Mariana Ferreira Advocacia. Todos os direitos reservados.</p>
-          <p>OAB/SP 534.173</p>
+          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+            <p>OAB/SP 534.173</p>
+            <p className="footer__dev">
+              Desenvolvido por <a href="https://www.instagram.com/henriqu3_dias/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', textDecoration: 'none', fontWeight: '500' }}>Henrique Dias</a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

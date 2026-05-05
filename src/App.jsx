@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import ParticleBackground from './components/ParticleBackground';
 import CustomCursor from './components/CustomCursor';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
+
 import { Toaster } from 'react-hot-toast';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Stats />
         <About />
         <Areas />
+
         <Team />
         <Differentials />
         <Testimonials />

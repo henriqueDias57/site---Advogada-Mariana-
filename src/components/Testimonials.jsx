@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const testimonials = [
-  { quote: 'A equipe do MAR conduziu a reestruturação societária do nosso grupo com uma precisão cirúrgica. O que parecia impossível de resolver em menos de seis meses, eles entregaram em quatro — e com economia de R$ 12 milhões em contingências.', name: 'Marcelo Teixeira', role: 'CEO · Grupo Teixeira Agropecuária' },
-  { quote: 'Trabalhamos com a Dra. Carolina em uma disputa tributária que se arrastava há 8 anos no CARF. Ela não só reverteu a autuação como recuperou créditos que nem sabíamos que tínhamos direito. Profissionalismo impecável.', name: 'Fernanda Oliveira', role: 'CFO · Olympus Farmacêutica' },
-  { quote: 'Em um divórcio com patrimônio de mais de R$ 200 milhões em jogo, o que mais me impressionou foi a discrição. Nenhum vazamento, nenhuma exposição. Protegeram minha família e meu legado como prometido.', name: 'Nome preservado a pedido do cliente', role: 'Empresário · Setor de Construção Civil' },
+  { quote: 'Procurei a Dra. Mariana após ser demitida sem receber minhas verbas rescisórias corretamente. Ela analisou tudo com muita atenção e conseguiu todos os meus direitos, incluindo horas extras que eu nem sabia que tinha. Profissional dedicada e muito humana.', name: 'Cláudia Mendes', role: 'Auxiliar Administrativa · Cruzeiro/SP' },
+  { quote: 'Meu pedido de aposentadoria tinha sido negado pelo INSS duas vezes. A Dra. Mariana estudou todo o meu caso, reuniu a documentação necessária e conseguiu a concessão do meu benefício. Sou muito grata pela paciência e competência dela.', name: 'José Carlos Ribeiro', role: 'Aposentado · Lavrinhas/SP' },
+  { quote: 'Sofri assédio moral no trabalho durante anos e não sabia como agir. A Dra. Mariana me acolheu, explicou cada etapa do processo e lutou pelo meu caso com muita garra. Recebi a indenização que eu merecia. Recomendo de olhos fechados.', name: 'Patrícia Almeida', role: 'Operadora de Caixa · Cruzeiro/SP' },
 ];
 
 const slideVariants = {

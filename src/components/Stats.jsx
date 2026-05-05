@@ -37,7 +37,7 @@ function Counter({ target, suffix = '' }) {
 }
 
 const stats = [
-  { target: 3, label: 'Anos de atuação' },
+  { target: 2, label: 'Anos de atuação' },
   { target: 92, suffix: '+', label: 'Casos concluídos' },
   { target: 94, suffix: '%', label: 'Êxito processual' },
   { target: 1, label: 'Advogada especialista' },

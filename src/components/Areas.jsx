@@ -2,10 +2,10 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 const areas = [
-  { num: '01', title: 'Direito do Trabalho', desc: 'Atuação na defesa dos direitos do trabalhador, reclamações trabalhistas, rescisões, horas extras, insalubridade e acidentes de trabalho. Consultoria preventiva para adequação de normas laborais.', tags: ['Reclamações', 'Direitos', 'Preventivo'] },
-  { num: '02', title: 'Direito Previdenciário', desc: 'Assessoria completa em aposentadorias (por tempo de contribuição, idade, especial), auxílio-doença, BPC/LOAS, pensão por morte e revisões de benefícios junto ao INSS.', tags: ['Aposentadorias', 'INSS', 'Benefícios'] },
-  { num: '03', title: 'Consultoria Jurídica', desc: 'Orientação legal estratégica para pessoas físicas e jurídicas, auxiliando na tomada de decisões seguras e prevenindo litígios futuros nas áreas trabalhista e previdenciária.', tags: ['Orientação', 'Prevenção', 'Estratégia'] },
-  { num: '04', title: 'Assistência Jurídica', desc: 'Acompanhamento dedicado em todas as etapas processuais e administrativas, garantindo que você tenha suporte contínuo e transparente do início ao fim da sua demanda.', tags: ['Acompanhamento', 'Suporte', 'Transparência'] },
+  { num: '01', title: 'Direito do Trabalho Estratégico', desc: 'Atuação contenciosa e consultiva focada na máxima proteção dos direitos laborais e mitigação de riscos. Lidamos com rescisões complexas, assédio moral e reconhecimento de vínculo.', tags: ['Alta Complexidade', 'Estratégia', 'Consultivo'] },
+  { num: '02', title: 'Direito Previdenciário de Elite', desc: 'Planejamento previdenciário meticuloso e atuação firme na concessão e revisão de benefícios. Garantimos que sua contribuição ao longo da vida seja integralmente recompensada.', tags: ['Planejamento', 'Revisão', 'Concessão'] },
+  { num: '03', title: 'Consultoria Preventiva', desc: 'Diagnóstico jurídico avançado para indivíduos e empresas. Estruturamos ações preventivas que blindam seu patrimônio e evitam passivos trabalhistas e previdenciários.', tags: ['Blindagem', 'Diagnóstico', 'Prevenção'] },
+  { num: '04', title: 'Contencioso Judicial', desc: 'Representação implacável em litígios. Desenhamos a arquitetura processual de cada caso com exclusividade, buscando sempre a resolução mais vantajosa e célere possível.', tags: ['Litígio', 'Representação', 'Arquitetura Processual'] },
 ];
 
 const cardVariant = {

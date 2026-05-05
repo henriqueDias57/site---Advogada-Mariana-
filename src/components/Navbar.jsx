@@ -43,7 +43,7 @@ export default function Navbar() {
             </li>
           ))}
           <li>
-            <a href="#contato" className="nav__cta" onClick={(e) => scrollTo(e, '#contato')}>Consulta</a>
+            <a href="#contato" className="nav__cta" onClick={(e) => scrollTo(e, '#contato')}>Contato</a>
           </li>
         </ul>
       </div>

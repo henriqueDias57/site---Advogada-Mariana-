@@ -17,17 +17,17 @@ export default function Hero() {
         {[0,1,2,3,4].map(i => <div className="hero__line" key={i} />)}
       </div>
       <motion.div className="hero__content" variants={container} initial="hidden" animate="show">
-        <motion.p className="hero__label" variants={fadeUp}>Cruzeiro · São Paulo</motion.p>
+        <motion.p className="hero__label" variants={fadeUp}>Advocacia Estratégica e Especializada</motion.p>
         <motion.h1 className="hero__title" variants={titleReveal}>
           <span className="hero__title-line">Mariana</span>
           <span className="hero__title-line">Ferreira</span>
         </motion.h1>
-        <motion.p className="hero__subtitle" variants={fadeUp}>Advocacia &amp; Consultoria</motion.p>
+        <motion.p className="hero__subtitle" variants={fadeUp}>Consultoria & Contencioso de Elite</motion.p>
         <motion.p className="hero__desc" variants={fadeUp}>
-          Consultoria e Assistência Jurídica especializada em Direito do Trabalho e Direito Previdenciário. Atendimento presencial focado em excelência e resultados.
+          Excelência e precisão estratégica em Direito do Trabalho e Previdenciário. Protegemos seu patrimônio e garantimos seus direitos com atendimento exclusivo.
         </motion.p>
         <motion.div className="hero__actions" variants={fadeUp}>
-          <a href="#contato" className="btn btn--primary" onClick={(e) => scrollTo(e, '#contato')}>Agende uma Consulta</a>
+          <a href="#contato" className="btn btn--primary" onClick={(e) => scrollTo(e, '#contato')}>Fale Conosco</a>
           <a href="#sobre" className="btn btn--ghost" onClick={(e) => scrollTo(e, '#sobre')}>Conheça o Escritório</a>
         </motion.div>
       </motion.div>

@@ -20,18 +20,16 @@ export default function Team() {
         <motion.h2 className="section-title" initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.1 }}>
           A <em>Advogada</em>
         </motion.h2>
-        <div className="team__grid">
-          {team.map((t, i) => (
-            <motion.article className="team-card" key={i} custom={i} variants={cardVar} initial="hidden" animate={inView ? 'visible' : 'hidden'}>
-              <div className="team-card__photo">
-                <img src={t.photo} alt={t.name} loading="lazy" />
-              </div>
-              <h3 className="team-card__name">{t.name}</h3>
-              <p className="team-card__role">{t.role}</p>
-              <p className="team-card__bio">{t.bio}</p>
-              <p className="team-card__oab">{t.oab}</p>
-            </motion.article>
-          ))}
+        <div className="team__profile">
+          <div className="team__profile-photo">
+            <img src={team[0].photo} alt={team[0].name} loading="lazy" />
+          </div>
+          <div className="team__profile-info">
+            <h3 className="team__profile-name">{team[0].name}</h3>
+            <span className="team__profile-role">{team[0].role}</span>
+            <p className="team__profile-bio">{team[0].bio}</p>
+            <span className="team__profile-oab">{team[0].oab}</span>
+          </div>
         </div>
       </div>
     </section>
